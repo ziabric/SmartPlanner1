@@ -1,0 +1,112 @@
+\hypertarget{class_data}{}\doxysection{Data Class Reference}
+\label{class_data}\index{Data@{Data}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_data_ad2956fdaae8aaa0141bf7b666cbf48b2}\label{class_data_ad2956fdaae8aaa0141bf7b666cbf48b2}} 
+bool {\bfseries Is\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Проверка на наличие заметок \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_data_a3522663405a4c60d1a56971961ec6402}{rtitle}} (std\+::ptrdiff\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Получение названя заметки по ее индексу \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_data_abad7aaf18573ce7fcec1de2abf981e1b}{rsource}} (std\+::ptrdiff\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Получение текста заметки по ее индексу \end{DoxyCompactList}\item 
+QTime \mbox{\hyperlink{class_data_aeccffbb01bb51758bbfcbbb4e1d04583}{rdate}} (std\+::ptrdiff\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Получение времени оповещения по ее индексу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_acdc9b5a1e436ffb9c9f3ce9c793c38b0}{push}} (QString title, QString source, QTime date)
+\begin{DoxyCompactList}\small\item\em Добавление заметки в список \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a78d6e81e65dbd5ba853fb37a85f6e1d0}{pop}} (std\+::ptrdiff\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Удаление заметки из списка \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_aea22e0c93d8c7c51dd6eebe5b6a53317}\label{class_data_aea22e0c93d8c7c51dd6eebe5b6a53317}} 
+std\+::vector$<$ QTime $>$ {\bfseries getvectordate} ()
+\begin{DoxyCompactList}\small\item\em Получение списка оповещений \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_aba546b94166f691eb93d1f317a932ac8}\label{class_data_aba546b94166f691eb93d1f317a932ac8}} 
+QString\+List {\bfseries getvectortitle} ()
+\begin{DoxyCompactList}\small\item\em Получение списка названий заметок \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_a78d6e81e65dbd5ba853fb37a85f6e1d0}\label{class_data_a78d6e81e65dbd5ba853fb37a85f6e1d0}} 
+\index{Data@{Data}!pop@{pop}}
+\index{pop@{pop}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void Data\+::pop (\begin{DoxyParamCaption}\item[{std\+::ptrdiff\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Удаление заметки из списка 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ Индекс заметки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_acdc9b5a1e436ffb9c9f3ce9c793c38b0}\label{class_data_acdc9b5a1e436ffb9c9f3ce9c793c38b0}} 
+\index{Data@{Data}!push@{push}}
+\index{push@{push}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Data\+::push (\begin{DoxyParamCaption}\item[{QString}]{title,  }\item[{QString}]{source,  }\item[{QTime}]{date }\end{DoxyParamCaption})}
+
+
+
+Добавление заметки в список 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em title} & -\/ Название заметки \\
+\hline
+\mbox{\texttt{ in}}  & {\em source} & -\/ Текст заметки \\
+\hline
+\mbox{\texttt{ in}}  & {\em date} & -\/ Время оповещения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_aeccffbb01bb51758bbfcbbb4e1d04583}\label{class_data_aeccffbb01bb51758bbfcbbb4e1d04583}} 
+\index{Data@{Data}!rdate@{rdate}}
+\index{rdate@{rdate}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{rdate()}{rdate()}}
+{\footnotesize\ttfamily QTime Data\+::rdate (\begin{DoxyParamCaption}\item[{std\+::ptrdiff\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Получение времени оповещения по ее индексу 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ индекс времени оповещения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_abad7aaf18573ce7fcec1de2abf981e1b}\label{class_data_abad7aaf18573ce7fcec1de2abf981e1b}} 
+\index{Data@{Data}!rsource@{rsource}}
+\index{rsource@{rsource}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{rsource()}{rsource()}}
+{\footnotesize\ttfamily QString Data\+::rsource (\begin{DoxyParamCaption}\item[{std\+::ptrdiff\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Получение текста заметки по ее индексу 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ индекс текста заметки \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_a3522663405a4c60d1a56971961ec6402}\label{class_data_a3522663405a4c60d1a56971961ec6402}} 
+\index{Data@{Data}!rtitle@{rtitle}}
+\index{rtitle@{rtitle}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{rtitle()}{rtitle()}}
+{\footnotesize\ttfamily QString Data\+::rtitle (\begin{DoxyParamCaption}\item[{std\+::ptrdiff\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Получение названя заметки по ее индексу 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ индекс названия заметки \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+data.\+h\item 
+data.\+cpp\end{DoxyCompactItemize}

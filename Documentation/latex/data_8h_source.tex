@@ -1,0 +1,44 @@
+\hypertarget{data_8h_source}{}\doxysection{data.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef DATA\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define DATA\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QStringList>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QTime>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_data}{Data}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     QStringList vectortitle; }
+\DoxyCodeLine{20     QStringList vectorsource; }
+\DoxyCodeLine{21     std::vector<QTime> vectordate; }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_data}{Data}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_data}{\string~Data}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_data_ad2956fdaae8aaa0141bf7b666cbf48b2}{IsEmpty}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{31     QString \mbox{\hyperlink{class_data_a3522663405a4c60d1a56971961ec6402}{rtitle}}(std::ptrdiff\_t index);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{35     QString \mbox{\hyperlink{class_data_abad7aaf18573ce7fcec1de2abf981e1b}{rsource}}(std::ptrdiff\_t index);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{39     QTime \mbox{\hyperlink{class_data_aeccffbb01bb51758bbfcbbb4e1d04583}{rdate}}(std::ptrdiff\_t index);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_data_acdc9b5a1e436ffb9c9f3ce9c793c38b0}{push}}(QString title, QString source, QTime date);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_data_a78d6e81e65dbd5ba853fb37a85f6e1d0}{pop}}(std::ptrdiff\_t index);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52     std::vector<QTime> \mbox{\hyperlink{class_data_aea22e0c93d8c7c51dd6eebe5b6a53317}{getvectordate}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55     QStringList \mbox{\hyperlink{class_data_aba546b94166f691eb93d1f317a932ac8}{getvectortitle}}();}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DATA\_H}}
+
+\end{DoxyCode}
